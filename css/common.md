@@ -8,3 +8,5 @@
 ```
 
 - There is a selector specificity ranking that determines which style wins out, if you have issues you can check that in dev tools by hovering over css classes to see ther selector specificity ranking.
+
+- `flex-direction: row` is the default setting for `display:flex` so you shouldn't need to introduce it unless it is to override something. 
