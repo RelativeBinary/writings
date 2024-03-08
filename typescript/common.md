@@ -1,0 +1,4 @@
+## resolved types are incompatible 
+Typically you can trace back to where one value/prop has a type that isn't expected when being passed to another object and it can simply be fixed by changing the type. 
+But when a property suddenly supports more types than expected and it doesn't seem clear how that's happening here is some advice: 
+- watch out for over lapping names. sometimes one type has label as a React.JSX.Element while another has label as a string. This is usually pretty obvious from the error message. But sometimes you'll just get something less obivous like ![[Pasted image 20240307112711.png]] its actually because the min/max being passed to the component via destructuring clashes with the min/max defined in `NumberDisplayAndInputFieldProps`
